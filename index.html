@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hafil Razak | Web Developer & Tech Enthusiast</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Plus+Jakarta+Sans:wght@300;500;800&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">HR<span>.</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Stack</a></li>
+      <li><a href="#projects">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero reveal">
+    <div class="hero-badge">Available for Select Projects</div>
+    <h1 class="hero-title">Engineering modern web systems from <span>Puttur, IN</span>.</h1>
+    <p class="hero-subtitle">
+      I'm Hafil Razak—a Web Developer and Tech Enthusiast building reliable web apps, cloud tooling, and robust digital interfaces.
+    </p>
+    <div class="hero-cta">
+      <a href="#contact" class="btn btn-primary">Start a Project</a>
+      <a href="https://github.com/hafilrazz" target="_blank" rel="noreferrer" class="btn btn-secondary">Source Code</a>
+    </div>
+  </header>
+
+  <section id="about" class="section reveal">
+    <div class="section-label">Identity & Profiles</div>
+    <h2>Engineered for clarity, built for speed.</h2>
+    <p>
+      Balancing clean code architecture with pragmatic design. Based in Puttur, Karnataka, working fluently across English, Hindi, Kannada, and Malayalam.
+    </p>
+    <div class="links-grid">
+      <a href="https://hafilrazak.online" target="_blank" rel="noreferrer" class="card">
+        <span class="card-tag">Gravatar Profile</span>
+        <h3>hafilrazak.online &rarr;</h3>
+        <p>Canonical identity & profiles directory.</p>
+      </a>
+      <a href="https://github.com/hafilrazz" target="_blank" rel="noreferrer" class="card">
+        <span class="card-tag">GitHub</span>
+        <h3>github.com/hafilrazz &rarr;</h3>
+        <p>Open source repos, architectures, and experiments.</p>
+      </a>
+      <a href="https://linkedin.com/in/hafilrazz" target="_blank" rel="noreferrer" class="card">
+        <span class="card-tag">LinkedIn</span>
+        <h3>hafilrazz &rarr;</h3>
+        <p>Professional background, networking, and updates.</p>
+      </a>
+      <a href="https://hafilrazak.wordpress.com" target="_blank" rel="noreferrer" class="card">
+        <span class="card-tag">Writing</span>
+        <h3>hafilrazak.wordpress.com &rarr;</h3>
+        <p>Articles, tech walkthroughs, and thoughts.</p>
+      </a>
+    </div>
+  </section>
+
+  <section id="skills" class="section reveal">
+    <div class="section-label">Capabilities</div>
+    <h2>Core Stack & Tooling</h2>
+    <div class="skills-wrapper">
+      <div class="skill-item">Modern JavaScript (ESNext)</div>
+      <div class="skill-item">HTML5 / Modern CSS</div>
+      <div class="skill-item">Cloud & Distributed Systems</div>
+      <div class="skill-item">Relational Databases & SQL</div>
+      <div class="skill-item">Java Services</div>
+      <div class="skill-item">RESTful APIs</div>
+      <div class="skill-item">Linux / CLI Tooling</div>
+      <div class="skill-item">UI/UX Architecture</div>
+    </div>
+  </section>
+
+  <section id="contact" class="section reveal">
+    <div class="section-label">Transmission</div>
+    <h2>Initiate Direct Connection</h2>
+    <p>Send an immediate message via client-side dispatch, or send BTC to support direct open-source research.</p>
+
+    <div class="contact-container">
+      <form id="contact-form" class="contact-form">
+        <div class="form-group">
+          <label for="from_name">Name</label>
+          <input type="text" id="from_name" name="from_name" placeholder="Ada Lovelace" required>
+        </div>
+        <div class="form-group">
+          <label for="reply_to">Email</label>
+          <input type="email" id="reply_to" name="reply_to" placeholder="ada@domain.com" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Specify your objective..." required></textarea>
+        </div>
+        <button type="submit" id="submit-btn" class="btn btn-primary full-width">Send Message</button>
+        <p id="form-status" class="form-status"></p>
+      </form>
+
+      <div class="crypto-card">
+        <h3>Direct Tip / Settlement</h3>
+        <p>For protocol grants or consulting retainers:</p>
+        <div class="btc-box">
+          <code>bc1qnzhgd35e633x6sv9fflmu53jyntzzu4wnr2g7s</code>
+          <button id="copy-btc-btn" class="copy-btn" title="Copy BTC Address">Copy</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Hafil Razak. All rights reserved. Zero bloat framework footprint.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
