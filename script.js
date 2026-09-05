@@ -3,9 +3,9 @@
 // 2. Add an Email Service (e.g., Gmail/Outlook)
 // 3. Create an Email Template with variables: {{from_name}}, {{reply_to}}, {{message}}
 // 4. Fill in these three constants:
-const EMAILJS_PUBLIC_KEY = "YOUR_EMAILJS_PUBLIC_KEY";
-const EMAILJS_SERVICE_ID = "YOUR_SERVICE_ID";
-const EMAILJS_TEMPLATE_ID = "YOUR_TEMPLATE_ID";
+const EMAILJS_PUBLIC_KEY = "W85Mz4cYXG0CVONev";
+const EMAILJS_SERVICE_ID = "service_4t6a12q";
+const EMAILJS_TEMPLATE_ID = "template_1lemu7n";
 
 // Initialize EmailJS
 (function () {
