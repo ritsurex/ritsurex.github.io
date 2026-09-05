@@ -3,118 +3,146 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hafil Razak | Web Developer & Tech Enthusiast</title>
+  <title>Hafil Razak | Interactive Dev Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Plus+Jakarta+Sans:wght@300;500;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;500;700;800&display=swap" rel="stylesheet">
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 <body>
 
+  <div class="cursor-dot" id="cursor-dot"></div>
+  <div class="cursor-outline" id="cursor-outline"></div>
+
+  <canvas id="particle-canvas"></canvas>
+
   <nav class="navbar">
-    <div class="logo">HR<span>.</span></div>
+    <div class="logo">HR<span class="pulse-dot">.</span></div>
     <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Stack</a></li>
-      <li><a href="#projects">Work</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about" class="hover-link">About</a></li>
+      <li><a href="#skills" class="hover-link">Stack</a></li>
+      <li><a href="#projects" class="hover-link">Work</a></li>
+      <li><a href="#contact" class="hover-link">Contact</a></li>
     </ul>
   </nav>
 
-  <header class="hero reveal">
-    <div class="hero-badge">Available for Select Projects</div>
-    <h1 class="hero-title">Engineering modern web systems from <span>Puttur, IN</span>.</h1>
+  <header class="hero">
+    <div class="hero-badge animate-fade">
+      <span class="status-indicator"></span> Operating from Puttur, IN
+    </div>
+    
+    <h1 class="hero-title">
+      Building modern web systems & <br>
+      <span class="terminal-text"><span id="typewriter"></span><span class="cursor-blink">_</span></span>
+    </h1>
+
     <p class="hero-subtitle">
-      I'm Hafil Razak—a Web Developer and Tech Enthusiast building reliable web apps, cloud tooling, and robust digital interfaces.
+      I'm <strong>Hafil Razak</strong>—a Web Developer and Tech Enthusiast balancing clean code architecture, cloud tooling, and low-latency digital experiences.
     </p>
+
     <div class="hero-cta">
-      <a href="#contact" class="btn btn-primary">Start a Project</a>
-      <a href="https://github.com/hafilrazz" target="_blank" rel="noreferrer" class="btn btn-secondary">Source Code</a>
+      <a href="#contact" class="btn btn-primary magnetic-btn">Start a Project</a>
+      <a href="https://github.com/hafilrazz" target="_blank" rel="noreferrer" class="btn btn-secondary magnetic-btn">GitHub Profile</a>
     </div>
   </header>
 
-  <section id="about" class="section reveal">
-    <div class="section-label">Identity & Profiles</div>
-    <h2>Engineered for clarity, built for speed.</h2>
-    <p>
-      Balancing clean code architecture with pragmatic design. Based in Puttur, Karnataka, working fluently across English, Hindi, Kannada, and Malayalam.
+  <section id="about" class="section">
+    <div class="section-label">// CONNECTIVITY</div>
+    <h2>Verified Profiles & Ecosystem</h2>
+    <p class="section-desc">
+      Fluent across English, Hindi, Kannada, and Malayalam. Select any node to jump to external environments:
     </p>
-    <div class="links-grid">
-      <a href="https://hafilrazak.online" target="_blank" rel="noreferrer" class="card">
-        <span class="card-tag">Gravatar Profile</span>
+
+    <div class="cards-grid">
+      <a href="https://hafilrazak.online" target="_blank" rel="noreferrer" class="tilt-card" data-tilt>
+        <div class="card-glow"></div>
+        <span class="card-tag">Identity</span>
         <h3>hafilrazak.online &rarr;</h3>
-        <p>Canonical identity & profiles directory.</p>
+        <p>Canonical identity hub & personal Gravatar index.</p>
       </a>
-      <a href="https://github.com/hafilrazz" target="_blank" rel="noreferrer" class="card">
-        <span class="card-tag">GitHub</span>
+
+      <a href="https://github.com/hafilrazz" target="_blank" rel="noreferrer" class="tilt-card" data-tilt>
+        <div class="card-glow"></div>
+        <span class="card-tag">Version Control</span>
         <h3>github.com/hafilrazz &rarr;</h3>
-        <p>Open source repos, architectures, and experiments.</p>
+        <p>Open source codebases, system configs, and prototypes.</p>
       </a>
-      <a href="https://linkedin.com/in/hafilrazz" target="_blank" rel="noreferrer" class="card">
-        <span class="card-tag">LinkedIn</span>
-        <h3>hafilrazz &rarr;</h3>
-        <p>Professional background, networking, and updates.</p>
+
+      <a href="https://linkedin.com/in/hafilrazz" target="_blank" rel="noreferrer" class="tilt-card" data-tilt>
+        <div class="card-glow"></div>
+        <span class="card-tag">Network</span>
+        <h3>LinkedIn &rarr;</h3>
+        <p>Career milestones, enterprise updates, and connections.</p>
       </a>
-      <a href="https://hafilrazak.wordpress.com" target="_blank" rel="noreferrer" class="card">
-        <span class="card-tag">Writing</span>
-        <h3>hafilrazak.wordpress.com &rarr;</h3>
-        <p>Articles, tech walkthroughs, and thoughts.</p>
+
+      <a href="https://hafilrazak.wordpress.com" target="_blank" rel="noreferrer" class="tilt-card" data-tilt>
+        <div class="card-glow"></div>
+        <span class="card-tag">Dispatches</span>
+        <h3>Technical Blog &rarr;</h3>
+        <p>In-depth architectural breakdowns and dev logs.</p>
       </a>
     </div>
   </section>
 
-  <section id="skills" class="section reveal">
-    <div class="section-label">Capabilities</div>
-    <h2>Core Stack & Tooling</h2>
-    <div class="skills-wrapper">
-      <div class="skill-item">Modern JavaScript (ESNext)</div>
-      <div class="skill-item">HTML5 / Modern CSS</div>
-      <div class="skill-item">Cloud & Distributed Systems</div>
-      <div class="skill-item">Relational Databases & SQL</div>
-      <div class="skill-item">Java Services</div>
-      <div class="skill-item">RESTful APIs</div>
-      <div class="skill-item">Linux / CLI Tooling</div>
-      <div class="skill-item">UI/UX Architecture</div>
+  <section id="skills" class="section">
+    <div class="section-label">// ARCHITECTURE</div>
+    <h2>Technical Arsenal</h2>
+    <p class="section-desc">Hover over any engine to view deployment capabilities:</p>
+
+    <div class="skills-grid">
+      <div class="skill-chip"><span>JavaScript (ESNext)</span></div>
+      <div class="skill-chip"><span>Modern CSS / Canvas</span></div>
+      <div class="skill-chip"><span>Java Microservices</span></div>
+      <div class="skill-chip"><span>AWS EC2 & Cloud Infra</span></div>
+      <div class="skill-chip"><span>SQL / Relational DBs</span></div>
+      <div class="skill-chip"><span>Distributed Systems</span></div>
+      <div class="skill-chip"><span>REST APIs</span></div>
+      <div class="skill-chip"><span>Linux CLI / Devops</span></div>
     </div>
   </section>
 
-  <section id="contact" class="section reveal">
-    <div class="section-label">Transmission</div>
-    <h2>Initiate Direct Connection</h2>
-    <p>Send an immediate message via client-side dispatch, or send BTC to support direct open-source research.</p>
+  <section id="contact" class="section">
+    <div class="section-label">// TRANSMISSION</div>
+    <h2>Initiate Contact</h2>
 
-    <div class="contact-container">
-      <form id="contact-form" class="contact-form">
+    <div class="contact-layout">
+      <form id="contact-form" class="glass-panel">
         <div class="form-group">
-          <label for="from_name">Name</label>
-          <input type="text" id="from_name" name="from_name" placeholder="Ada Lovelace" required>
+          <label for="from_name">Identity</label>
+          <input type="text" id="from_name" name="from_name" placeholder="Linus Torvalds" required>
         </div>
         <div class="form-group">
-          <label for="reply_to">Email</label>
-          <input type="email" id="reply_to" name="reply_to" placeholder="ada@domain.com" required>
+          <label for="reply_to">Return Address (Email)</label>
+          <input type="email" id="reply_to" name="reply_to" placeholder="linus@domain.com" required>
         </div>
         <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" placeholder="Specify your objective..." required></textarea>
+          <label for="message">Transmission Payload</label>
+          <textarea id="message" name="message" rows="4" placeholder="State requirements, context, or parameters..." required></textarea>
         </div>
-        <button type="submit" id="submit-btn" class="btn btn-primary full-width">Send Message</button>
-        <p id="form-status" class="form-status"></p>
+        <button type="submit" id="submit-btn" class="btn btn-primary full-width">Dispatch Packet</button>
+        <div id="form-status" class="form-status"></div>
       </form>
 
-      <div class="crypto-card">
-        <h3>Direct Tip / Settlement</h3>
-        <p>For protocol grants or consulting retainers:</p>
-        <div class="btc-box">
-          <code>bc1qnzhgd35e633x6sv9fflmu53jyntzzu4wnr2g7s</code>
-          <button id="copy-btc-btn" class="copy-btn" title="Copy BTC Address">Copy</button>
+      <div class="crypto-panel glass-panel">
+        <div class="terminal-header">
+          <span class="circle red"></span>
+          <span class="circle yellow"></span>
+          <span class="circle green"></span>
+          <span class="terminal-title">btc-settlement.sh</span>
         </div>
+        <p class="crypto-desc">Direct peer-to-peer settlement address for compute, grants, or consulting retainers:</p>
+        <div class="copy-box">
+          <input type="text" readonly value="bc1qnzhgd35e633x6sv9fflmu53jyntzzu4wnr2g7s" id="btc-input">
+          <button id="copy-btc-btn" class="btn-copy">Copy Address</button>
+        </div>
+        <span id="copy-feedback" class="copy-feedback"></span>
       </div>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2026 Hafil Razak. All rights reserved. Zero bloat framework footprint.</p>
+    <p>&copy; 2026 Hafil Razak. Systems verified. No bulky frameworks injured in production.</p>
   </footer>
 
   <script src="script.js"></script>
